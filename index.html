@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WebSockets - Simple chat</title>
+    <style>
+    * { 
+        font-family:tahoma; 
+        font-size:12px; 
+        padding-top:20px;
+        margin:0px;}
+   
+  </style>
+  </head>
+  <body>
+        <center>
+            <div>
+                <span id="timer">0</span>
+            </div>
+            <div>
+                <span id="status">Connecting...</span>
+            </div>
+            <div>
+                <!-- <a href="#" onclick="$(this).startClock();"><button type="button" id="btnstart" class="btn btn-default btn-sm small" >Start Clock</button></a>
+                <a href="#" onclick="$(this).stopClock();"><button type="button" id="btnstop" class="btn btn-default btn-sm small" >Stop Clock</button></a> -->
+                <br><hr><br>
+                 <a href="#" onclick="$(this).connectmaster();"><button type="button" id="btnconnectmaster" class="btn btn-default btn-sm small" >Connect</button></a>
+                <a href="#" onclick="$(this).disconnectmaster();"><button type="button" id="btndisconnectmaster" class="btn btn-default btn-sm small" >Disconnect</button></a>
+
+            </div>
+            
+        </center>
+
+    <script src="./jquery.min.js">
+    </script>
+    <script src="./frontend.js"></script>
+    <!-- <script src="./testend.js"></script> -->
+  </body>
+</html>
